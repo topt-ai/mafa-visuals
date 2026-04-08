@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-[#040404] px-[5vw] py-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex items-center">
         <img
-          src="/logo mafa2.webp"
+          src="/logo-mafa2.webp"
           alt="Mafa Visuals"
           className="h-8 opacity-50 invert"
         />

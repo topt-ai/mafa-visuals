@@ -35,31 +35,31 @@ const projects = [
     title: 'Kombucha',
     category: 'Photography',
     aspect: 'aspect-[4/5]',
-    image: '/kombucha mafa.webp',
+    image: '/kombucha-mafa.webp',
   },
   {
     title: 'Maple',
     category: 'Photography',
     aspect: 'aspect-[4/5]',
-    image: '/maple mafa.webp',
+    image: '/maple-mafa.webp',
   },
   {
     title: 'Muro',
     category: 'Photography',
     aspect: 'aspect-[16/9]',
-    image: '/muro mafa.webp',
+    image: '/muro-mafa.webp',
   },
   {
     title: 'Rainbow',
     category: 'Photography',
     aspect: 'aspect-[16/9]',
-    image: '/rainbow mafa.webp',
+    image: '/rainbow-mafa.webp',
   },
   {
     title: 'Toronto',
     category: 'Photography',
     aspect: 'aspect-[16/9]',
-    image: '/toronto mafa.webp',
+    image: '/toronto-mafa.webp',
   },
 ];
 
