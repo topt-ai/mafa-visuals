@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a href="#" className="hover-target">
             <img
-              src="/logo mafa2.webp"
+              src="/logo-mafa2.webp"
               alt="Mafa Visuals"
               className="h-10 opacity-90 invert"
             />
