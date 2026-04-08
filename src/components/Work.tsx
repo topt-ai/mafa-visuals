@@ -100,21 +100,28 @@ export default function Work() {
           return (
             <div
               key={index}
-              className={`work-card group relative overflow-hidden bg-[#1a1a1a] hover-target cursor-pointer ${project.aspect}`}
+              className={`work-card group relative overflow-hidden bg-transparent hover-target cursor-pointer ${project.aspect}`}
             >
               {project.image ? (
-                <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="absolute inset-0 w-full h-full object-cover z-10"
+                  crossOrigin="anonymous"
+                  onLoad={() => console.log("[v0] Image loaded:", project.image)}
+                  onError={(e) => console.log("[v0] Image failed to load:", project.image, e)}
+                />
               ) : (
-                <div className="absolute inset-0 flex items-center justify-center opacity-15">
+                <div className="absolute inset-0 flex items-center justify-center opacity-15 bg-[#1a1a1a]">
                   <Icon className="w-16 h-16 text-white" />
                 </div>
               )}
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(8,8,8,0.9)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(8,8,8,0.9)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20" />
 
               {/* Content */}
-              <div className="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:-translate-y-2 transition-transform duration-400 ease-out">
+              <div className="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:-translate-y-2 transition-transform duration-400 ease-out z-30">
                 <h3 className="font-semibold text-[18px] text-primary mb-1">
                   {project.title}
                 </h3>
